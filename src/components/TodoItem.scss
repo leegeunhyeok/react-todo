@@ -1,0 +1,30 @@
+.todo__item {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+  font-size: 1rem;
+  line-height: 2rem;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  &__control {
+    &--left {
+      float: left;
+      margin-right: 1rem;
+    }
+
+    &--right {
+      float: right;
+      margin-left: 1rem;
+    }
+  }
+
+  &__edit {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+$accent-color: #61dbfb;
+
+@mixin button {
+  cursor: pointer;
+  outline: none;
+  height: 2rem;
+  border: none;
+  color: #777;
+  -webkit-transition: .2s;
+          transition: .2s;
+
+  &.red {
+    color: tomato;
+  }
+}
+
+.button {
+  @include button;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: #eee;
+  }
+
+  &--active {
+    @include button;
+    border-radius: 5px;
+    background-color: #eee;
+    font-size: 1rem;
+    color: $accent-color;
+  }
+
+  &.accent {
+    background-color: $accent-color;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+.toggle {
+  @include button;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #eee;
+
+  &:hover {
+    background-color: #aaa;
+  }
+
+  &--active {
+    @include button;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}

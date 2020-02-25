@@ -1,0 +1,27 @@
+.todo {
+  margin-top: 5rem;
+  max-height: 40vh;
+  padding: 1rem;
+  overflow-y: auto;
+
+  &--empty {
+    color: #777;
+    text-align: center;
+  }
+}
+
+.source-code {
+  text-align: center;
+
+  h6 {
+    margin: 5px 0;
+  }
+
+  a {
+    color: #777;
+
+    &:visited {
+      color: #777;
+    }
+  }
+}
