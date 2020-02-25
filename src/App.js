@@ -116,6 +116,15 @@ function App () {
         <h6>Using React</h6>
         <a href="https://github.com/leegeunhyeok/react-todo">Source Code</a>
       </div>
+      <div className="checkout">
+        <a className="react active"
+          href="https://docs.geundung.dev/pages/react-todo"
+        >React</a>
+        <a className="vue"
+          href="https://docs.geundung.dev/pages/vue-todo"
+        >Vue</a>
+        <a className="angular" href="./?">Angluar</a>
+      </div>
     </div>
   );
 }

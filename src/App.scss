@@ -25,3 +25,30 @@
     }
   }
 }
+
+.checkout {
+  margin-top: .5rem;
+  text-align: center;
+
+  a {
+    margin: 0 .5rem;
+    text-decoration: none;
+    font-weight: bold;
+
+    &.active {
+      text-decoration: underline;
+    }
+    
+    &.react, &.react:visited {
+      color: #61dbfb;
+    }
+
+    &.vue, &.vue:visited{
+      color: #41b883;
+    }
+
+    &.angular, &.angular:visited {
+      color: #b52e31;
+    }
+  }
+}
